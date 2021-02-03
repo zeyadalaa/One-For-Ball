@@ -1,12 +1,12 @@
 package com.example.oneforball;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class Splash_Screen_Activity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +16,9 @@ public class Splash_Screen_Activity extends AppCompatActivity {
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-                Intent mInHome = new Intent(Splash_Screen_Activity.this, InvoiceASAPTabActivity.class);
-                Splash_Screen_Activity.this.startActivity(mInHome);
-                Splash_Screen_Activity.this.finish();
+                Intent mInHome = new Intent(SplashScreenActivity.this, LoginActivity.class);
+                SplashScreenActivity.this.startActivity(mInHome);
+                SplashScreenActivity.this.finish();
             }
         }, 6000);
     }

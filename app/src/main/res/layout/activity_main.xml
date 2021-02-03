@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#41508B"
-    tools:context=".Splash_Screen_Activity">
+    tools:context=".SplashScreenActivity">
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/splashScreen"
+        android:background="@drawable/splash_screen"
         android:fitsSystemWindows="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
