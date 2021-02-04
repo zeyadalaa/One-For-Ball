@@ -16,6 +16,10 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures{
+        viewBinding true;
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -29,11 +33,15 @@ android {
 }
 
 dependencies {
-
+    // dependency of retrofit library
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    //dependency of Gson Converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+    //dependency of gif image container
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
