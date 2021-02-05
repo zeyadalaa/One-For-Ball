@@ -15,6 +15,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivitySplashScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        this.getSupportActionBar().hide();
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
