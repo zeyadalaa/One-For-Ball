@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "57269763950",
+    "firebase_url": "https://one-for-ball-default-rtdb.firebaseio.com",
+    "project_id": "one-for-ball",
+    "storage_bucket": "one-for-ball.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57269763950:android:a748b4518dfe4d63bbcb7f",
+        "android_client_info": {
+          "package_name": "com.example.oneforball"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57269763950-5ccj8cg7lv029k4ldqe5ei4qd938vij6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZXu6SBn4Nrye0ci4Ri-Mvy3rBiovCuhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57269763950-5ccj8cg7lv029k4ldqe5ei4qd938vij6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

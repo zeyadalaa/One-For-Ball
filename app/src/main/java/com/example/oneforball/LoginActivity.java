@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.oneforball.databinding.ActivityLoginBinding;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
     ActivityLoginBinding binding;
@@ -17,15 +19,21 @@ public class LoginActivity extends AppCompatActivity {
     EditText password;
     Button createaccount;
     Button login;
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         this.getSupportActionBar().hide();
+
         password = findViewById(R.id.password);
         email = findViewById(R.id.email);
         createaccount = findViewById(R.id.createaccount);
+
+
+        mAuth = FirebaseAuth.getInstance();
+
         createaccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,4 +43,5 @@ public class LoginActivity extends AppCompatActivity {
         });
 
     }
+
 }
