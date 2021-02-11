@@ -13,5 +13,6 @@ public class LeaguesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityLeaguesBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        this.getSupportActionBar().hide();
     }
 }
