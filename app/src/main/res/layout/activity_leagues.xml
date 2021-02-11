@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/sky_blue"
+    android:background="@color/white"
     tools:context=".LeaguesActivity">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:text="@string/choose_your_league"
+        android:text="choose_your_league"
         android:textColor="@color/white"
         android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
