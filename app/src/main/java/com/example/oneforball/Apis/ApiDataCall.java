@@ -2,7 +2,7 @@ package com.example.oneforball.Apis;
 
 import java.util.List;
 
-public interface ApiDataCall<Type>{
-     String API_KEY = "9fdebf00-66cd-11eb-85f9-2fe309e59279";
-     Type retriveData(AsynTunneling asynTunneling);
+public interface ApiDataCall{
+     String API_KEY = "9cf85780-6c65-11eb-8822-f72eb86d58da";
+     void retriveData(AsynTunneling asynTunneling);
 }

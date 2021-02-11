@@ -4,17 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/sky_blue"
     tools:context=".LeaguesActivity">
+
+    <include
+        android:id="@+id/leagues_rectangles_background"
+        layout="@layout/background_rectangles_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <TextView
         android:id="@+id/choose_your_league_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
+        android:fontFamily="@font/playfair_display"
         android:text="@string/choose_your_league"
-        android:textColor="@color/white"
+        android:textColor="@color/sky_blue"
         android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leagues_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/choose_your_league_text_view" />
 </androidx.constraintlayout.widget.ConstraintLayout>

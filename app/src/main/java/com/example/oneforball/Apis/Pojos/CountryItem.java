@@ -1,4 +1,4 @@
-package com.example.oneforball.Apis;
+package com.example.oneforball.Apis.Pojos;
 
 import com.google.gson.annotations.SerializedName;
 
