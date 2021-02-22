@@ -10,10 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OneForBall">
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".CreateAnAccountActivity"></activity>
         <activity android:name=".BasicActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".LeaguesActivity" />
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
